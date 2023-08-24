@@ -3,6 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Total from "./Total";
+import Color from "./Color";
+import Hello from "./Hello";
+
 
 
 // class Toggle extends React.Component {
@@ -53,19 +57,19 @@ import reportWebVitals from "./reportWebVitals";
 //     );
 //   }
 // }
-function ActionLink() {  
-  function handleClick(e) {  
-      e.preventDefault();  
-      alert('You had clicked a Link.');  
-  }  
-  return (  
-      <a href="https://learn.codegym.vn/courses/reactjs" onClick={handleClick}>
-            Click_Me  
-      </a>  
-  );  
-}  
+// function ActionLink() {  
+//   function handleClick(e) {  
+//       e.preventDefault();  
+//       alert('You had clicked a Link.');  
+//   }  
+//   return (  
+//       <a href="https://learn.codegym.vn/courses/reactjs" onClick={handleClick}>
+//             Click_Me  
+//       </a>  
+//   );  
+// }  
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<ActionLink/>);
+root.render(<App/>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
