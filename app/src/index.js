@@ -1,15 +1,71 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+
+// class Toggle extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {isToggleOn: true};
+
+//     // Phép "ràng buộc" (bind) này là cần thiết để `this` hoạt động trong callback
+//     this.handleClick = this.handleClick.bind(this);
+//   }
+
+//   handleClick() {
+//     this.setState(prevState => ({
+//       isToggleOn: !prevState.isToggleOn
+//     }));
+//   }
+
+//   render() {
+//     return (
+//       <button onClick={this.handleClick}>
+//         {this.state.isToggleOn ? 'ON' : 'OFF'}
+//       </button>
+//     );
+//   }
+// }
+
+
+
+// class Football extends React.Component {
+//   shoot = (a) => {
+//     alert(a);
+//   }
+//   render() {
+//     return (
+//       <button onClick={() => this.shoot("Goal")}>Take the shot!</button>
+//     );
+//   }
+// }
+
+
+// class Football extends React.Component {
+//   shoot(a) {
+//     alert(a);
+//   }
+//   render() {
+//     return (
+//       <button onClick={this.shoot.bind(this, "Goal")}>Take the shot!</button>
+//     );
+//   }
+// }
+function ActionLink() {  
+  function handleClick(e) {  
+      e.preventDefault();  
+      alert('You had clicked a Link.');  
+  }  
+  return (  
+      <a href="https://learn.codegym.vn/courses/reactjs" onClick={handleClick}>
+            Click_Me  
+      </a>  
+  );  
+}  
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<ActionLink/>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
