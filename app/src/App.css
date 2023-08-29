@@ -65,3 +65,8 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.delete-button {
+  background-color: red;
+  color: white;
+}
+

@@ -1,11 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import 'bootstrap/dist/css/bootstrap.css';
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Total from "./Total";
 import Color from "./Color";
 import Hello from "./Hello";
+import Add from "./Add";
+import Student from "./Student";
+import Car from "./Car";
+import Game from "./Game";
+import "./Game.css";
+
 
 
 
@@ -69,7 +76,7 @@ import Hello from "./Hello";
 //   );  
 // }  
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App/>);
+root.render(<Game/>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

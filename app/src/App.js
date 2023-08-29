@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.css';
 import Count from "./Count";
 import Total from "./Total";
 import Hello from "./Hello";
@@ -87,6 +88,20 @@ class App extends Component {
 }
 
 export default App;
+
+
+// import MyClock from "./MyClock";
+// import "./App.css";
+
+// function App() {
+//   return (
+//     <div class="Container">
+//       <MyClock />
+//     </div>
+//   );
+// }
+
+// export default App;
 
 // class App extends Component {
 //   constructor(props) {
